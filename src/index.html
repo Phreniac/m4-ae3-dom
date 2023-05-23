@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/spinner.css">
+    <title>AE3</title>
+</head>
+<body>
+    <div id="elemento_padre">
+        <div id="lateral"></div>
+        <div id="insertar"></div>
+        <div id="eliminar" class="eliminar">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <div>cargando..</div>
+        </div>
+    </div>
+    <!-- ejercicio grupal 3 -->
+    <main>
+        <section>
+            <h1>Información Empresa</h1>
+            <div>
+                <label for="">Nombre empresa</label>
+                <input id="nombre_empresa" type="text">
+            </div>
+            <div>
+                <label for="">ID Registro</label>
+                <input id="id_registro_empresa" type="text">
+            </div>
+            <div>
+                <label for="">RUT</label>
+                <input id="rut_empresa" type="text">
+            </div>
+            <div>
+                <label for="">Rubro Importación</label>
+                <select name="" id="seleccion_rubro">
+                    <option value="ru_01">Mineria</option>
+                    <option value="ru_02">Agricultura</option>
+                    <option value="ru_03">Tecnologia</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Tamaño Importador</label>
+                <select name="" id="seleccion_tamanio">
+                    <option value="em_01">Pequeño</option>
+                    <option value="em_02">Mediano</option>
+                    <option value="em_03">Grande</option>
+                </select>
+            </div>
+            <div><button id="registrar_empresa">Registrar empresa</button></div>
+            <hr>
+            <h1>Imformación Importación</h1>
+            <div>
+                <label for="">ID Importación</label>
+                <input id="id_importacion" type="text">
+            </div>
+            <div>
+                <label for="">Nombre Producto</label>
+                <input id="nombre_producto" type="text">
+            </div>
+            <div>
+                <label for="">Numero Producto</label>
+                <input id="cantidad_producto" type="text">
+            </div>
+            <div>
+                <label for="">Precio Unitario</label>
+                <input id="precio_producto" type="text">
+            </div>
+            <div><button id="agregar_producto">Agregar Producto</button></div>
+            <div><button id="registrar_importacion">Registrar Importacion</button></div>
+        </section>
+    </main>
+   
+    
+    <div id="reemplazo" class="reemplazo">reemplazo</div>
+    <script src="./js/ejerciciog3.js"></script>
+    <script src="./js/AE3.js"></script>
+</body>
+</html>
